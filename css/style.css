@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+.caveat-normal {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body{
+    background-color: #F6E5DF;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #E3D3D3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.label{
+    font-family: Caveat;
+    font-size: 36px;
+    color: black;
+    margin: 0 30px;
+}
+
+a.label:hover{
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 60%;
+
+}
+
+.menu-button {
+    width: 30px;
+    height: 27px;
+    background-image: url(../resourses/menuBtn.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer; 
+    color: white; 
+    margin: 0 30px;
+  }
+
+ /* Добавить всяких анимаций */
+  .menu-button:hover {
+    transition: 0.5s;
+    opacity: 60%;
+  }
+
+
+
+.main-container{
+    margin: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 3000px;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sofia-photo{
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.evgenii-photo{
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.eq-love{
+    margin: 10px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: nowrap;
+}
+
+.eq-love-contetnt{
+    font-family: Caveat;
+    font-size:36px;
+}
+
+.eq-love-img{
+    width: 60px;
+    height: 45px;
+    background-image: url(../resourses/heart.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer; 
+    color: white;
+    margin: 15px;
+}
+
+
+@media (max-width: 1350px) {
+
+    .sofia-photo{
+        width: 300px;
+        height: 450px;
+    }
+
+    .evgenii-photo{
+        width: 300px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .main-container{
+        height: 70vh;   
+        margin: 80px 10px;
+        display: flex;
+    }
+}
+
+
+@media (max-width: 960px) {
+
+    .sofia-photo{
+        width: 200px;
+        height: 312px;
+    }
+
+    .evgenii-photo{
+        width: 200px;
+        height: 312px;
+    }
+}
+
+@media (max-width: 749px) {
+    .main-container{
+        height: 70vh;   
+        margin: 80px 10px;
+        display: flex;
+    }
+
+    .main-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sofia-photo{
+        margin: 20px;
+        align-self: flex-start;
+    }
+
+    .evgenii-photo{
+        margin: 20px;
+        align-self: self-end;
+    }
+}
